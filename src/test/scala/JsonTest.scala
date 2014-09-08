@@ -2,6 +2,7 @@ package webclient
 
 import org.scalatest.FunSuite
 import spray.json._
+import M2eeJsonProtocol._
 
 class JsonTest extends FunSuite {
 
