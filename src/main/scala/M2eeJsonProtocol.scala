@@ -7,6 +7,7 @@ object M2eeJsonProtocol extends DefaultJsonProtocol {
       JsObject(m.map {                                                 // 2
         case (k, v) => v match {
           case v: String => (k, JsString(v))
+          case v: Int => (k, JsNumber(v))
           case v: Map[String, Any] => (k, write(v))                    // 3
           case _ => (k, JsString(v.toString))                          // 4
         }

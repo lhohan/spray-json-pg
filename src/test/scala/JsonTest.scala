@@ -17,7 +17,7 @@ class JsonTest extends FunSuite {
       )
     )
 
-    assertResult( """{"param1":"value1","param2":"2","param3":{"param4":"value4","param5":{"param6":"value6","param7":"value7"}}}""") {  // 1
+    assertResult( """{"param1":"value1","param2":2,"param3":{"param4":"value4","param5":{"param6":"value6","param7":"value7"}}}""") {  // 1
       testMap.toJson.toString()  // 2
     }
   }
