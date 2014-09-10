@@ -1,5 +1,3 @@
-package webclient
-
 import org.scalatest.FunSuite
 import spray.json._
 import M2eeJsonProtocol._
@@ -19,9 +17,8 @@ class JsonTest extends FunSuite {
       )
     )
 
-    assertResult( """{"param1":"value1","param2":"2","param3":{"param4":"value4","param5":{"param6":"value6","param7":"value7"}}}""") {
-      testMap.toJson.toString()
+    assertResult( """{"param1":"value1","param2":"2","param3":{"param4":"value4","param5":{"param6":"value6","param7":"value7"}}}""") {  // 1
+      testMap.toJson.toString()  // 2
     }
   }
-
 }
