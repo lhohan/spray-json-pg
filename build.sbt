@@ -4,7 +4,7 @@ resolvers ++= Seq(
 
 scalaVersion := "2.11.2"
 
-libraryDependencies += "io.spray" %% "spray-json" % "1.2.6"
+libraryDependencies += "io.spray" %% "spray-json" % "1.3.0"
 
 libraryDependencies += "org.scalatest" % "scalatest_2.11" % "2.2.1" % "test"
 
